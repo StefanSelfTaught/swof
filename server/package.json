@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Pop Stefan",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "fastify": "^3.19.0",
+    "fastify-cors": "^6.0.1",
+    "mongodb": "^3.6.10",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.11"
+  }
+}
