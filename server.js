@@ -8,7 +8,7 @@ fastify.register(require('./routes/engineers'))
 
 const start = async () => {
   try {
-    await fastify.listen(process.env.PORT || 5000)
+    await fastify.listen(process.env.PORT)
   } catch (error) {
     fastify.log.error(error)
     process.exit(1)
