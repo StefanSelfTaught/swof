@@ -4,7 +4,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json())
 
 export function useShiftsTimeline() {
   const { data, error } = useSWR(
-    'http://localhost:3001/shiftsTimeline',
+    'https://radiant-hamlet-27832.herokuapp.com/shiftsTimeline',
     fetcher
   )
 
@@ -16,7 +16,7 @@ export function useShiftsTimeline() {
 }
 export function useEngineers() {
   const { data, error } = useSWR(
-    'http://localhost:3001/engineers',
+    'https://radiant-hamlet-27832.herokuapp.com/engineers',
     fetcher
   )
 

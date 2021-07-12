@@ -7,7 +7,7 @@ export default function EngineersPicked() {
   React.useEffect(() => {
     ;(async () => {
       const rawResponse = await fetch(
-        'http://localhost:3001/lastShift'
+        'https://radiant-hamlet-27832.herokuapp.com/lastShift'
       )
       const data = await rawResponse.json()
       setEngineers([
@@ -19,12 +19,12 @@ export default function EngineersPicked() {
 
   const handleButtonClick = async () => {
     const rawResponse = await fetch(
-      'http://localhost:3001/pickEngineers'
+      'https://radiant-hamlet-27832.herokuapp.com/pickEngineers'
     )
     const data = await rawResponse.json()
     setEngineers(data.engineers)
-    mutate('http://localhost:3001/engineers')
-    mutate('http://localhost:3001/shiftsTimeline')
+    mutate('https://radiant-hamlet-27832.herokuapp.com/engineers')
+    mutate('https://radiant-hamlet-27832.herokuapp.com/shiftsTimeline')
   }
 
   return (
