@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "dotenv": "^10.0.0",
-    "fastify": "^3.19.0",
+    "fastify": "^3.29.4",
     "fastify-cors": "^6.0.1",
     "mongodb": "^3.6.10",
     "url": "^0.11.0"
